@@ -1,9 +1,8 @@
 {
  "name": "Contracts",
  "children": [
-  	{"name": "AAMS",
-  	"size":835596,
-     	"children": [
+  	{"name": "AAMS"
+  	   	"children": [
       		{"name": "CAMOC",
 		"children":[
 			{"name": "Alameda County Homeless Action Center", "size": 138681},
