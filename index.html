@@ -16,27 +16,7 @@
 <header>I hope something appears</header>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
-var root = {
- "name": "Contracts",
- "children": [
-  	{"name": "AAMS",
-  	"size":835596,
-     	"children": [
-      		{"name": "CAMOC",
-		"children":[
-			{"name": "Alameda County Homeless Action Center", "size": 138681},
-			{"name": "Alameda Family Services", "size": 86064},
-			{"name": "Asian Community Mental Health Board", "size": 89895},
-			{"name": "East Bay Agency for Children", "size": 90661},
-			{"name": "Roots Community Health Center", "size": 160346},
-			{"name": "Abode Services", "size": 137939},
-			{"name": "Afghan Coalition", "size": 72379},
-			{"name": "Davis Street Community Center, Inc.", "size": 59631}
-		]}
-		]
-	}]
 
-};
 
 var width = 960,
     height = 500;
@@ -53,7 +33,7 @@ var div = d3.select("body").append("div")
     .style("width", width + "px")
     .style("height", height + "px");
 
-//d3.json("contract.json", function(error, root) {
+d3.json("contract.json", function(error, root) {
   
   div.selectAll(".node")
       .data(treemap.nodes(root))
