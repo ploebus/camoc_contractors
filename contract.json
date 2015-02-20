@@ -1,4 +1,4 @@
-{
+[{
   "name": "Contracts",
   "children": [
     {"name": "AAMS",
@@ -53,4 +53,4 @@
 	   ]}
 	   
   ]
-}
+}]
