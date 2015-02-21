@@ -1,56 +1,31 @@
-[{
+{
   "name": "Contracts",
   "children": [
-    {"name": "AAMS",
+    {
+	"name": "AAMS",
     "children": [
-      {"name": "CAMOC",
-        "children":[
-        {"name": "Alameda County Homeless Action Center", "size": 138681},
-        {"name": "Alameda Family Services", "size": 86064},
-        {"name": "Asian Community Mental Health Board", "size": 89895},
-        {"name": "East Bay Agency for Children", "size": 90661},
-        {"name": "Roots Community Health Center", "size": 160346},
-        {"name": "Abode Services", "size": 137939},
-        {"name": "Afghan Coalition", "size": 72379},
-        {"name": "Davis Street Community Center, Inc.", "size": 59631}
-       ]},
-	   {"name": "CAMOC",
-        "children":[
-        {"name": "Alameda County Homeless Action Center", "size": 138681},
-        {"name": "Alameda Family Services", "size": 86064},
-        {"name": "Asian Community Mental Health Board", "size": 89895},
-        {"name": "East Bay Agency for Children", "size": 90661},
-        {"name": "Roots Community Health Center", "size": 160346},
-        {"name": "Abode Services", "size": 137939},
-        {"name": "Afghan Coalition", "size": 72379},
-        {"name": "Davis Street Community Center, Inc.", "size": 59631}
-       ]}
-	   ]},
-	   {"name": "AAMS",
-    "children": [
-      {"name": "CAMOC",
-        "children":[
-        {"name": "Alameda County Homeless Action Center", "size": 138681},
-        {"name": "Alameda Family Services", "size": 86064},
-        {"name": "Asian Community Mental Health Board", "size": 89895},
-        {"name": "East Bay Agency for Children", "size": 90661},
-        {"name": "Roots Community Health Center", "size": 160346},
-        {"name": "Abode Services", "size": 137939},
-        {"name": "Afghan Coalition", "size": 72379},
-        {"name": "Davis Street Community Center, Inc.", "size": 59631}
-       ]},
-	   {"name": "CAMOC",
-        "children":[
-        {"name": "Alameda County Homeless Action Center", "size": 138681},
-        {"name": "Alameda Family Services", "size": 86064},
-        {"name": "Asian Community Mental Health Board", "size": 89895},
-        {"name": "East Bay Agency for Children", "size": 90661},
-        {"name": "Roots Community Health Center", "size": 160346},
-        {"name": "Abode Services", "size": 137939},
-        {"name": "Afghan Coalition", "size": 72379},
-        {"name": "Davis Street Community Center, Inc.", "size": 59631}
-       ]}
-	   ]}
-	   
-  ]
-}]
+      {
+	  "name": "CAMOC",
+      "children":[
+         {"name": "Alameda County Homeless Action Center", "size": 138681},
+         {"name": "Alameda Family Services", "size": 86064},
+         {"name": "Asian Community Mental Health Board", "size": 89895},
+         {"name": "East Bay Agency for Children", "size": 90661},
+         {"name": "Roots Community Health Center", "size": 160346},
+         {"name": "Abode Services", "size": 137939},
+         {"name": "Afghan Coalition", "size": 72379},
+         {"name": "Davis Street Community Center, Inc.", "size": 59631}
+       ]
+	   },
+	   {
+      "name": "cluster",
+      "children": [
+       {"name": "AgglomerativeCluster", "size": 3938},
+       {"name": "CommunityStructure", "size": 3812},
+       {"name": "HierarchicalCluster", "size": 6714},
+       {"name": "MergeEdge", "size": 743}
+      ]
+    }
+	]
+	}]
+}
