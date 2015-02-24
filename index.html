@@ -100,7 +100,7 @@ function update(source) {
       .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 	
   nodeEnter.append("svg:text")
-      .attr("x", function(d) { return d.children || d._children ? -10 : d.size/10000 ; })
+      .attr("x", function(d) { return d.children || d._children ? -10 : 20 ; })
       .attr("dy", ".35em")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .text(function(d) { return d.name; })
