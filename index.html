@@ -95,9 +95,9 @@ function update(source) {
       .on("click", function(d) { toggle(d); update(d); });
 
   nodeEnter.append("svg:circle")
-      .attr("r", 1e-6)
+      .attr("r",function(d){return d.size})
       .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
-
+	
   nodeEnter.append("svg:text")
       .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
       .attr("dy", ".35em")
@@ -109,7 +109,7 @@ function update(source) {
   var nodeUpdate = node.transition()
       .duration(duration)
       .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
-
+	
   nodeUpdate.select("circle")
       .attr("r", 4.5)
       .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
@@ -124,7 +124,7 @@ function update(source) {
       .remove();
 
   nodeExit.select("circle")
-      .attr("r", 1e-6);
+      .attr("r", function(d){return d.size});
 
   nodeExit.select("text")
       .style("fill-opacity", 1e-6);
